@@ -1,0 +1,26 @@
+{
+  "name": "expressjs-course-by-rezi-v1",
+  "volta": {
+    "node": "24.12.0"
+  },
+  "version": "1.0.0",
+  "description": "course by rezi",
+  "keywords": [
+    "node"
+  ],
+  "homepage": "https://github.com/rezis-work/expressjs-course-by-rezi-v1#readme",
+  "bugs": {
+    "url": "https://github.com/rezis-work/expressjs-course-by-rezi-v1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezis-work/expressjs-course-by-rezi-v1.git"
+  },
+  "license": "ISC",
+  "author": "rezi karanadze",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}
