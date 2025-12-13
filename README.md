@@ -1,53 +1,27 @@
-# Express Course 🚀
+# Express Course by Rezi Karanadze
 
-Welcome to the **Express Course**! This repository is dedicated to helping you learn and master [Express.js](https://expressjs.com/), one of the most popular web application frameworks for Node.js.
+## Setting Up Your Development Environment
 
-## 📚 What you'll find here
+This project uses [Volta](https://volta.sh/) to manage Node.js versions.
 
-- Step-by-step Express tutorials
-- Example projects and code snippets
-- Practical exercises and solutions
-- Helpful resources and best practices
+### 1. Install Volta
 
-## 🏗️ Topics Covered
+If you don't have Volta installed, run the following command in your terminal:
 
-- Introduction to Express
-- Setting up an Express server
-- Routing and middleware
-- Handling requests and responses
-- Working with templates
-- Connecting to databases
-- Authentication and security basics
-- Deployment strategies
+```sh
+curl https://get.volta.sh | bash
+```
 
-## 🚦 Getting Started
+After installation, restart your terminal, or follow any post-install instructions provided by Volta.
 
-1. **Clone this repository**
+### 2. Pin the Correct Node Version
 
-   ```bash
-   git clone https://github.com/your-username/express-course.git
-   cd express-course
-   ```
+To ensure your environment uses the exact Node.js version specified for this project (`24.12.0`), run:
 
-2. **Install dependencies**
+```sh
+volta pin node@24.12.0
+```
 
-   ```bash
-   npm install
-   ```
+(You only need to do this if you ever want to change the project's pinned version; this project already has `.volta` configuration, so Volta will automatically use the correct version.)
 
-3. **Start the server**
-   ```bash
-   npm start
-   ```
-
-## 🙌 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests if you'd like to improve this course or add helpful materials.
-
-## 📖 Resources
-
-- [Express Documentation](https://expressjs.com/)
-- [MDN Web Docs - Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-
-Happy learning! 🎉
+Now, whenever you run `node`, `npm`, or related tools in this project directory, Volta will automatically select Node.js 24.12.0 for you.
