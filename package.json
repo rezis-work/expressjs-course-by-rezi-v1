@@ -4,6 +4,7 @@
     "node": "24.12.0"
   },
   "version": "1.0.0",
+  "type": "module",
   "description": "course by rezi",
   "keywords": [
     "node"
@@ -18,9 +19,16 @@
   },
   "license": "ISC",
   "author": "rezi karanadze",
-  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev": "node --watch src/index.ts",
+    "start": "node src/index.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
   }
 }
