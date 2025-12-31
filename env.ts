@@ -4,7 +4,7 @@ import { z } from "zod";
 process.env.APP_STAGE = process.env.APP_STAGE || "dev";
 
 const isProduction = process.env.APP_STAGE === "production";
-const isDevelopment = process.env.APP_STAGE === "development";
+const isDevelopment = process.env.APP_STAGE === "dev";
 const isTesting = process.env.APP_STAGE === "test";
 
 if (isDevelopment) {
@@ -19,6 +19,7 @@ const envSchema = z.object({
     .default("development"),
   APP_STAGE: z.enum(["dev", "production", "test"]).default("dev"),
   PORT: z.coerce.number().positive().default(3001),
+  VERSION: z.string(),
   // DATABASE_URL: z.string().startsWith("postgresql://"),
   // JWT_SECRET: z.string().min(32, "Must be at least 32 characters long"),
   // JWT_EXPIRES_IN: z.string().default("7d"),
